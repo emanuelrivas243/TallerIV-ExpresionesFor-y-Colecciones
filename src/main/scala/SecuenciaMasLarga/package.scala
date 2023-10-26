@@ -1,3 +1,6 @@
+/* Taller IV Colecciones y Expresiones For
+   Emanuel Arturo Rivas Escobar 2127706 */
+
 package object SecuenciaMasLarga {
   type Secuencia = Seq[Int]
   type Subsecuencia = Seq[Int]
@@ -29,13 +32,13 @@ package object SecuenciaMasLarga {
 
 
   // subSecuenciasDe
-  def subSecuenciasDe(s:Secuencia): Set[Subsecuencia] = {
+  def subSecuenciasDe(s: Secuencia): Set[Subsecuencia] = {
     val indices = subindices(0, s.length)
-    for(i <- indices) yield subSecuenciaAsoc(s, i)
+    for (i <- indices) yield subSecuenciaAsoc(s, i)
   }
 
   // Función 1.1.3
-  def incremental(s:Secuencia): Boolean = {
+  def incremental(s: Secuencia): Boolean = {
     val secuenciaIncrementada = (for {
       (num1, num2) <- s zip s.tail
     } yield num1 < num2).forall(_ == true)
@@ -45,7 +48,7 @@ package object SecuenciaMasLarga {
   }
 
   // Función subSecuenciasInc
-  def subSecuenciasInc(s:Secuencia): Set[Subsecuencia] = {
+  def subSecuenciasInc(s: Secuencia): Set[Subsecuencia] = {
     val subSecuenciasIncAux = subSecuenciasDe(s)
     for {
       sub <- subSecuenciasIncAux
@@ -54,7 +57,7 @@ package object SecuenciaMasLarga {
   }
 
   // Función subsecuenciaIncrementalMasLarga
-  def subsecuenciaIncrementalMasLarga(s:Secuencia): Subsecuencia = {
+  def subsecuenciaIncrementalMasLarga(s: Secuencia): Subsecuencia = {
     val subsecuencias = subSecuenciasInc(s)
     if (subsecuencias.isEmpty) Seq()
     else {
@@ -67,5 +70,22 @@ package object SecuenciaMasLarga {
     }
   }
 
+  // Función simlComenzandoEn
+  def ssimlComenzandoEn(i: Int, s: Secuencia): Subsecuencia = {
+    if (i < 0 || i >= s.length)Seq()
+    else {
+      val subsecuenciaMasLarga = (s(i) +: (for {
+        j <- i + 1 until s.length
+        if s(j) > s(j - 1)
+      } yield s(j)))
+      subsecuenciaMasLarga
+    }
+  }
+
+  // Funcion subSecIncMasLargaV2
+  def subSecIncMasLargaV2(s:Secuencia): Subsecuencia = {
+    val subAux = for (i <- 0 until s.length) yield ssimlComenzandoEn(i, s)
+    subAux.maxBy(_.length)
+  }
 
 }
