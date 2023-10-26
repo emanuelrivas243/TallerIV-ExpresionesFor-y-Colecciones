@@ -27,6 +27,7 @@ package object SecuenciaMasLarga {
     for (i <- inds) yield s(i)
   }
 
+
   // subSecuenciasDe
   def subSecuenciasDe(s:Secuencia): Set[Subsecuencia] = {
     val indices = subindices(0, s.length)
@@ -53,9 +54,17 @@ package object SecuenciaMasLarga {
   }
 
   // Función subsecuenciaIncrementalMasLarga
-
   def subsecuenciaIncrementalMasLarga(s:Secuencia): Subsecuencia = {
+    val subsecuencias = subSecuenciasInc(s)
+    if (subsecuencias.isEmpty) Seq()
+    else {
+      val subSecuenciaMasLarga = for {
+        sub <- subsecuencias
+        if sub.length == subsecuencias.map(_.length).max
+      } yield sub
 
+      subSecuenciaMasLarga.head
+    }
   }
 
 

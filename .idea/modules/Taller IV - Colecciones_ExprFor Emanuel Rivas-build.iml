@@ -108,8 +108,8 @@
     </orderEntry>
   </component>
   <component name="SbtModule">
-    <option name="buildForURI" value="file:/C:/Users/EMANUEL%20ARTURO%20RIVAS/Desktop/UNIVERSIDAD%20TALLERES%20Y%20TRABAJOS/Semestre%202023-II%20-%205to%20Semestre/Programación%20Funcional%20y%20Concurrente/Talleres/Taller%20IV%20-%20Colecciones_ExprFor%20Emanuel%20Rivas/" />
-    <option name="imports" value="SUB:DOLLARd34359f6cd7ffcd5c1a6.`root`, _root_.sbt.Keys._, _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.sbt._, _root_.sbt.nio.Keys._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" />
+    <option name="buildForURI" value="file:/C:/Users/EMANUEL%20ARTURO%20RIVAS/Desktop/UNIVERSIDAD%20TALLERES%20Y%20TRABAJOS/Semestre%202023-II%20-%205to%20Semestre/Programación%20Funcional%20y%20Concurrente/Talleres/Taller%20IV%20-%20Colecciones_ExpresionesFor%20Emanuel%20Rivas/" />
+    <option name="imports" value="SUB:DOLLAR07cfcd8bd0b660a1a4c3.`root`, _root_.sbt.Keys._, _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.sbt._, _root_.sbt.nio.Keys._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" />
     <option name="resolvers" value="C:\Users\EMANUEL ARTURO RIVAS\.ivy2\cache|ivy|true|Local cache, https://repo1.maven.org/maven2/|maven|public" />
   </component>
 </module>
